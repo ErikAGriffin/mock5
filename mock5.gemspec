@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.license               = "MIT"
   spec.files                 = Dir["LICENSE.text", "README.md", "lib/**/**"]
   spec.require_path          = "lib"
-  spec.required_ruby_version = ">= 1.9.3"
+  spec.required_ruby_version = ">= 2.2.0"
 
-  spec.add_dependency "webmock", "~> 1.15"
-  spec.add_dependency "sinatra", "~> 1.4"
+  spec.add_dependency "webmock", "~> 2.3.2"
+  spec.add_dependency "sinatra", "~> 2.0.0.beta2"
 end
