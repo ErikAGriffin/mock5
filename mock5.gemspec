@@ -14,6 +14,6 @@ Gem::Specification.new do |spec|
   spec.require_path          = "lib"
   spec.required_ruby_version = ">= 2.2.0"
 
-  spec.add_dependency "webmock", "~> 2.3.2"
-  spec.add_dependency "sinatra", "~> 2.0.0.beta2"
+  spec.add_dependency "webmock", "~> 2.3"
+  spec.add_dependency "sinatra", "~> 1.4"
 end

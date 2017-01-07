@@ -2,6 +2,8 @@ require "uri"
 require "sinatra"
 require "webmock"
 
+WebMock.enable!
+
 module Mock5
   # A class representing an API mock
   class Api
