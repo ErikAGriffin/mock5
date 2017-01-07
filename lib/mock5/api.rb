@@ -75,13 +75,12 @@ module Mock5
 
       uri.path = ""
       endpoint = Regexp.escape(uri.to_s)
-
       Regexp.new("\\A#{endpoint}\/#{app_paths_regex}\\z")
     end
 
     def app_paths_regex
-      regexes = app.routes.values.flatten.select{ |v| Regexp === v }
-      paths = regexes.map{ |regex| regex.source[3..-3] }
+      mustermen = app.routes.values.flatten.select{ |v| Mustermann === v }
+      paths = mustermen.map{ |musterman| musterman.to_regexp.source[11..-4] }
 
       return ".*" if paths.empty?
 
